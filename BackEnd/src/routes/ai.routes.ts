@@ -1,6 +1,6 @@
 import {Router} from "express";
-import { getReview } from "../controllers/ai.controller";
+import { getTests } from "../controllers/ai.controller";
 
 export const AiRouter = Router();
 
-AiRouter.post("/get-review", getReview);
+AiRouter.post("/get-tests", getTests);
