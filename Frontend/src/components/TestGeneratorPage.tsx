@@ -21,7 +21,7 @@ function TestGeneratorPage() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://ec2-51-20-5-66.eu-north-1.compute.amazonaws.com/ai/get-tests',{
+      const response = await axios.post('https://testgeniusai.run.place/ai/get-tests',{
         code
       });
       setReview(response.data);
