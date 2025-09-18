@@ -21,11 +21,11 @@ function TestGeneratorPage() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-tests',{
+      const response = await axios.post('http://ec2-51-20-5-66.eu-north-1.compute.amazonaws.com/ai/get-tests',{
         code
       });
       setReview(response.data);
-      console.log(response.data);
+      // console.log(response.data);
     } catch (error) {
       console.error("Failed to generate tests:", error);
       setReview("Failed to generate tests. Please check the server connection.");
